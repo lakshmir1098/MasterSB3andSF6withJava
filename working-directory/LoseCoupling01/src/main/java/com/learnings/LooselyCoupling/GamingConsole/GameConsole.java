@@ -1,4 +1,4 @@
-package com.learnings.MasteringSpring.LooselyCoupling01.GamingConsole;
+package com.learnings.LooselyCoupling.GamingConsole;
 
 public interface GameConsole {
      void up();

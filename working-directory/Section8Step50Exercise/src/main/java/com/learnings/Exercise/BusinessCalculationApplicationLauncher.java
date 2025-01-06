@@ -2,6 +2,7 @@ package com.learnings.Exercise;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +15,7 @@ class BusinessCalculationService{
 	private final DataService ds;
 
 	@Autowired
-        public BusinessCalculationService(DataService ds) {
+        public BusinessCalculationService( @Qualifier("sdb") DataService ds) {
                 this.ds = ds;
         }
 
@@ -32,7 +33,7 @@ public class BusinessCalculationApplicationLauncher{
 	public static void main(String[] args) {
 		var context = new AnnotationConfigApplicationContext(BusinessCalculationApplicationLauncher.class);
 
-		BusinessCalculationService bs  = context.getBean(BusinessCalculationService.class);
+		BusinessCalculationService bs  = context.getBean( BusinessCalculationService.class);
 		System.out.println(bs.findMax());
 		context.close();
 

@@ -8,13 +8,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.learnings.SpringIntro.Gamer")
-@ComponentScan(" com.learnings.SpringIntro.GamerConfiguration")
+@ComponentScan("com.learnings.SpringNextStep.Gamer")
 public class GameConsoleRunnnerMain {
 
     public static  void main (String args[]){
         var context =  new AnnotationConfigApplicationContext(GameConsoleRunnnerMain.class);
-        System.out.println("List of Beans :" + String.join("\n ", context.getBeanDefinitionNames()));
         try(context){
             context.getBean(GameRunner.class).run();
             context.getBean(Game02.class).jump();

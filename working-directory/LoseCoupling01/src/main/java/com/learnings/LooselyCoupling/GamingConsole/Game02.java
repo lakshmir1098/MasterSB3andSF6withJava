@@ -1,6 +1,8 @@
-package com.learnings.MasteringSpring.LooselyCoupling01.GamingConsole;
+package com.learnings.LooselyCoupling.GamingConsole;
 
-public class Game02 implements  GameConsole {
+import com.learnings.LooselyCoupling.GamingConsole.GameConsole;
+
+public class Game02 implements GameConsole {
     public void up() {
         System.out.println("G02 up");
     }

@@ -1,9 +1,9 @@
-package com.learnings.MasteringSpring.LooselyCoupling.GamingConsole;
+package com.learnings.LooselyCoupling.GamingConsole;
 
 public class GameRunner {
-     private com.learnings.MasteringSpring.LooselyCoupling01.GamingConsole.GameConsole gc;
+     private final GameConsole gc;
 
-     public GameRunner(com.learnings.MasteringSpring.LooselyCoupling01.GamingConsole.GameConsole gc){
+     public GameRunner(GameConsole gc){
           this.gc = gc;
      }
 
