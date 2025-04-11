@@ -1,4 +1,4 @@
-package com.learnings.SpringNextStep.DependencyInj;
+package com.learnings.DependencyInj.DependencyInj;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,38 +7,33 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-@Component("Engine2")
-class EngineS {
+@Component("Engine3")
+class EngineF {
         public void start() {
-                System.out.println("Engine2 started!");
+                System.out.println("Engine3 started!");
         }
 }
 
-@Component("Car2")
-class CarS {
-        private EngineS engine;
-
-        // Dependency injected via setter
-        @Autowired
-        public void setEngine(EngineS engine) {
-                this.engine = engine;
-        }
+@Component("Car3")
+class CarF {
+        @Autowired // Dependency injected directly into the field
+        private EngineF engine;
 
         public void drive() {
                 engine.start();
-                System.out.println("Car2 is moving!");
+                System.out.println("Car3 is moving!");
         }
 }
 
 @Configuration
 @ComponentScan
-public class SetterDI {
+public class FieldDI {
         public static void main(String[] args) {
-                var context = new AnnotationConfigApplicationContext(SetterDI.class);
+                var context = new AnnotationConfigApplicationContext(FieldDI.class);
 
-                CarS car = context.getBean(CarS.class);
+                CarF car = context.getBean(CarF.class);
                 car.drive();
-
+                
                 context.close();
         }
 }

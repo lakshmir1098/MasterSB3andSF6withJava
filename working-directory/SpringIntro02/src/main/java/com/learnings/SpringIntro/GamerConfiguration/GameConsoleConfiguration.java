@@ -15,9 +15,4 @@ public class GameConsoleConfiguration {
        return  game;
    }
 
-@Bean
-    public GameRunner gameRunner(){
-        var gameRunner = new GameRunner(game());
-        return gameRunner;
-    }
 }

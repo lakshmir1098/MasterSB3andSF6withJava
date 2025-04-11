@@ -1,4 +1,4 @@
-package com.learnings.SpringNextStep.DependencyInj;
+package com.learnings.DependencyInj.DependencyInj;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
