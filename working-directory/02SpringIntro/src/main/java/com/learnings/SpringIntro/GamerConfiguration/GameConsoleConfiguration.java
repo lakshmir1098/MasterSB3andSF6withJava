@@ -9,10 +9,16 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class GameConsoleConfiguration {
 
-@Bean
-   public GameConsole game(){
-       var game = new Game01();
-       return  game;
-   }
+        @Bean
+        public GameConsole game() {
+                var game = new Game01();
+                return game;
+        }
 
+        @Bean
+        public GameRunner gameRunner(GameConsole game) {
+                var gameRunner = new GameRunner(game);
+                return gameRunner;
+        }
 }
+

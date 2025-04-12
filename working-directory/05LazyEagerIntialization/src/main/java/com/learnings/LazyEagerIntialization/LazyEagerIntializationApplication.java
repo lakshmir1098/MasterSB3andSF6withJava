@@ -32,6 +32,7 @@ public class LazyEagerIntializationApplication {
 
 	public static void main(String[] args) {
 		var context = new AnnotationConfigApplicationContext(LazyEagerIntializationApplication.class);
+		// class B will not be printed unless called explicitly
 		//System.out.println(context.getBean(B.class));
 	}
 
