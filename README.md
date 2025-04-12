@@ -56,7 +56,7 @@ Ref : [SpringIntro](https://github.com/lakshmir1098/Spring6-with-Java/tree/maste
 4. Retrieve the ouput of this bean in our main class by calling the Beans.
 
    ```java
-   System.out.println(context.getBean("name"));
+    System.out.println(context.getBean("name"));
    ```
 
 ---
@@ -323,3 +323,14 @@ public class FieldDI {
       }
 }
 ```
+
+### BeanScope
+ There are 2 bean scope  they are 
+ 1. Singleton scope - when a class is singleton scoped and when its bean is called multiple times, it will create same instance.
+2.  Prototype scope - when a class is prototype scoped andwhen its bean called multiple times, it creates multiple instamces.
+
+Other than this for webAppliction using HTTP request has few scopes. They are,
+1. Request scope
+2. Session scope
+3. Applicqation scope
+4. WebSocket scope
