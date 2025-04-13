@@ -332,5 +332,12 @@ public class FieldDI {
 Other than this for webAppliction using HTTP request has few scopes. They are,
 1. Request scope
 2. Session scope
-3. Applicqation scope
+3. Application scope
 4. WebSocket scope
+
+### XML Configuration
+Can be done and read by,
+```java
+var context = new ClassPathXmlApplicationContext("contextconfig.xml");
+```
+
