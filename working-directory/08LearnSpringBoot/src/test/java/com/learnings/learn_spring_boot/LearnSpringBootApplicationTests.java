@@ -1,10 +1,10 @@
-package com.learnings.copyapplication;
+package com.learnings.learn_spring_boot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CopyapplicationApplicationTests {
+class LearnSpringBootApplicationTests {
 
 	@Test
 	void contextLoads() {
