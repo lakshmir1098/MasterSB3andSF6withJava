@@ -14,7 +14,7 @@ Ref : [Loose Coupling Game App using Interface](https://github.com/lakshmir1098/
 
 |                                         Tight Coupling                                         |                                         LooseCoupling                                          |
 | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
-| ![](https://github.com/lakshmir1098/Spring6-with-Java/blob/master/images/tight%20coupling.png) | ![](https://github.com/lakshmir1098/Spring6-with-Java/blob/master/images/Loose%20coupling.png) |
+| ![](https://github.com/lakshmir1098/MasterSB3andSF6withJava/blob/master/images/tight%20coupling.png) | ![](https://github.com/lakshmir1098/MasterSB3andSF6withJava/blob/master/images/Loose%20coupling.png) |
 
 ---
 
