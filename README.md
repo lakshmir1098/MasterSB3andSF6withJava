@@ -341,3 +341,56 @@ Can be done and read by,
 var context = new ClassPathXmlApplicationContext("contextconfig.xml");
 ```
 
+<h4> How to create a simple RESTAPI call </h4>
+    1. Create a controller class  with `@RestController` having  `@RequestMapping` to an API on a method
+
+```java
+        @RestController
+        public class Controller
+        {
+                @RequestMapping("/courses")
+                public List <Courses> getCourse(){
+                        return Arrays.asList(
+                                new Courses(1, "AWS", "Udemy"),
+                                new Courses(2,"Microservice","Udemy")
+                        );
+                }
+        }
+```
+2. Now we have a List of Courses so what is courses. Its a user defined datatype of List. Now we have to create a courses class  and define it.
+
+```java
+public class Courses {
+        private long id;
+        private String subject;
+        private String source;
+
+        public Courses(long id, String subject, String source) {
+                this.id = id;
+                this.subject = subject;
+                this.source = source;
+        }
+
+        public long getId() {
+                return id;
+        }
+
+        public String getSubject() {
+                return subject;
+        }
+
+        public String getSource() {
+                return source;
+        }
+
+        @Override
+        public String toString() {
+                return "Courses{" +
+                        "id=" + id +
+                        ", subject='" + subject + '\'' +
+                        ", source='" + source + '\'' +
+                        '}';
+        }
+}
+```
+3. Then just run main class and open https:\\localhost:8080\courses
