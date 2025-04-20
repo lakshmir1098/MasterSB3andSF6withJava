@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.learnings</groupId>
-	<artifactId>PreDandPostC</artifactId>
+	<artifactId>07PreCPostDInstance</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PreDandPostC</name>
+	<name>PreCPostDInstance</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

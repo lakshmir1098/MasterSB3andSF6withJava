@@ -342,7 +342,9 @@ var context = new ClassPathXmlApplicationContext("contextconfig.xml");
 ```
 
 <h4> How to create a simple RESTAPI call </h4>
-    1. Create a controller class  with `@RestController` having  `@RequestMapping` to an API on a method
+
+1.  have a project generated and dowloanded from spring intializer with  __spring web dependency__
+2. Create a controller class  with `@RestController` having  `@RequestMapping` to an API on a method
 
 ```java
         @RestController
@@ -357,7 +359,7 @@ var context = new ClassPathXmlApplicationContext("contextconfig.xml");
                 }
         }
 ```
-2. Now we have a List of Courses so what is courses. Its a user defined datatype of List. Now we have to create a courses class  and define it.
+3. Now we have a List of Courses so what is courses. Its a user defined datatype of List. Now we have to create a courses class  and define it.
 
 ```java
 public class Courses {
@@ -394,3 +396,10 @@ public class Courses {
 }
 ```
 3. Then just run main class and open https:\\localhost:8080\courses
+
+### Hibernate configuration
+1. Create a project with H2 dependency added
+2. In `application.properties` file enable h2console using  `spring.h2.console.enabled=true`
+3. Run the server to get JDBC URL/ database source url and then add it to `application.properties` as  `spring.datasource.url=jdbc:h2:mem:5cc821bf-7ca0-4a44-89db-18e68177bfcf`
+4. Now go to http://localhost:8080/h2-console/ and login. Here any quries can be written and this same like a SQL database.
+5. Create aSQL file under src\main\resources

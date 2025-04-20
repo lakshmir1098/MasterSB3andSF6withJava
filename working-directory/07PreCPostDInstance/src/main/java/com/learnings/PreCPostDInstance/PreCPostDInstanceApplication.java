@@ -1,11 +1,12 @@
-package com.learnings.prepost;
+package com.learnings.PreCPostDInstance;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -46,11 +47,11 @@ class B{
 
 @Configuration
 @ComponentScan
-public class PrePostInstanceApplication {
+public class PreCPostDInstanceApplication {
 
 	public static void main(String[] args) {
 
-		new AnnotationConfigApplicationContext(PrePostInstanceApplication.class);
+		new AnnotationConfigApplicationContext(PreCPostDInstanceApplication.class);
 
 
 	}

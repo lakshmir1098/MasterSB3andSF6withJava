@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.learnings</groupId>
-	<artifactId>LazyEagerIntialization</artifactId>
+	<artifactId>05LazyEagerIntialization</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>LazyEagerIntialization</name>
 	<description>Demo project for Spring Boot</description>

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.learnings</groupId>
-	<artifactId>BeanScope</artifactId>
+	<artifactId>06BeanScope</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BeanScope</name>
 	<description>Demo project for Spring Boot</description>
